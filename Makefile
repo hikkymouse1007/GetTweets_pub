@@ -1,3 +1,5 @@
+docker-path:
+	@echo $(PWD)
 path:
 	@mkdir ~/command
 	@cp ./command/twitter ~/command/twitter
@@ -6,3 +8,4 @@ path:
 rm-path:
 	@rm -rf ~/command
 	@rm /usr/local/bin/twitter 
+

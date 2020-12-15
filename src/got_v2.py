@@ -12,13 +12,13 @@ until_date =  os.environ["UNTIL"]
 tweet_count = os.environ["NUM"]
 
 #Provide your own credentials here.
-consumer_key = '####################'
-consumer_secret = '########################'
-access_token = '####################################'
-access_token_secret = '################################'
+TWITTER_CLIENT_KEY = 'XXXXXXXXXXXXXXXXXX'
+TWITTER_CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXX'
+TWITTER_CLIENT_ID_ACCESS_TOKEN = 'XXXXXXXXXXXXXXXXXX'
+TWITTER_CLIENT_ID_ACCESS_TOKEN_SECRET = 'XXXXXXXXXXXXXXXXXX'
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+auth = tweepy.OAuthHandler(TWITTER_CLIENT_KEY, TWITTER_CLIENT_SECRET)
+auth.set_access_token(TWITTER_CLIENT_ID_ACCESS_TOKEN, TWITTER_CLIENT_ID_ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth,wait_on_rate_limit=True)
 
 #pip install snscrape
